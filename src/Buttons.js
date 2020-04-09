@@ -46,11 +46,44 @@ export default function Buttons(props) {
           }>
           Set Quarter
         </button>
+        <br />
+        <button
+          className="btn"
+          onClick={() =>
+            props.ballOn > 5 ? props.setBallOn(props.ballOn - 5) : props.setBallOn(0)
+          }>
+          Ball On - 5
+        </button>
+        <button
+          className="btn"
+          onClick={() =>
+            props.ballOn > 1 ? props.setBallOn(props.ballOn - 1) : props.setBallOn(0)
+          }>
+          Ball On - 1
+        </button>
+        <button
+          className="btn"
+          onClick={() =>
+            props.ballOn < 50 ? props.setBallOn(props.ballOn + 1) : props.setBallOn(49)
+          }>
+          Ball On + 1
+        </button>
+        <button
+          className="btn"
+          onClick={() =>
+            props.ballOn < 46
+              ? props.setBallOn(props.ballOn + 5)
+              : props.setBallOn(50 - (5 - (50 - props.ballOn)))
+          }>
+          Ball On + 5
+        </button>
+        <br />
         <button
           className="btn"
           onClick={() => {
             props.setDown(1);
             props.setToGo(10);
+            props.setBallOn(20);
             props.setQuarter(1);
             props.setHomeScore(0);
             props.setAwayScore(0);

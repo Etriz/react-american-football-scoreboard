@@ -115,9 +115,15 @@
 .homeButtons,
 .awayButtons {
   width: 50%;
+  display: flex;
+  justify-content: space-around;
 }
 .utilityButtons {
   width: auto;
+  text-align: center;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
 }
 
 .homeButtons__touchdown,

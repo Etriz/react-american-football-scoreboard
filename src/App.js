@@ -12,6 +12,7 @@ function App() {
   const [awayScore, setAwayScore] = useState(0);
   const [down, setDown] = useState(1);
   const [toGo, setToGo] = useState(10);
+  const [ballOn, setBallOn] = useState(20);
   const [quarter, setQuarter] = useState(1);
 
   // this creates an infinite loop ... how to pass in a variable to make the function reusable
@@ -34,7 +35,7 @@ function App() {
             <div className="away__score">{awayScore}</div>
           </div>
         </div>
-        <BottomRow quarter={quarter} down={down} toGo={toGo} />
+        <BottomRow quarter={quarter} down={down} toGo={toGo} ballOn={ballOn} />
       </section>
       <Buttons
         homeScore={homeScore}
@@ -45,6 +46,8 @@ function App() {
         setDown={setDown}
         toGo={toGo}
         setToGo={setToGo}
+        ballOn={ballOn}
+        setBallOn={setBallOn}
         quarter={quarter}
         setQuarter={setQuarter}
       />
