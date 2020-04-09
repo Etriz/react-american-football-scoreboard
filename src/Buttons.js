@@ -3,9 +3,18 @@ import React from "react";
 export default function Buttons(props) {
   return (
     <section className="buttons">
-      <input type="text" defaultValue="Lions" />
-      <input type="text" defaultValue="Tigers" />
-
+      <div className="teamNames">
+        <input
+          type="text"
+          defaultValue={props.homeName}
+          onChange={(event) => props.setHomeName(event.target.value)}
+        />
+        <input
+          type="text"
+          defaultValue={props.awayName}
+          onChange={(event) => props.setAwayName(event.target.value)}
+        />
+      </div>
       <div className="homeButtons">
         {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
         <button

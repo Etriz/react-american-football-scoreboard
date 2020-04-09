@@ -112,11 +112,16 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.teamNames {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .homeButtons,
 .awayButtons {
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .utilityButtons {
   width: auto;

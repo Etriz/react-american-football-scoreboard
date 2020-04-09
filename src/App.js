@@ -6,8 +6,8 @@ import Scoreboard from "./Scoreboard";
 
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
-  const [homeName] = useState("Lions");
-  const [awayName] = useState("Tigers");
+  const [homeName, setHomeName] = useState("Lions");
+  const [awayName, setAwayName] = useState("Tigers");
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
   const [down, setDown] = useState(1);
@@ -31,6 +31,10 @@ function App() {
         quarter={quarter}
       />
       <Buttons
+        homeName={homeName}
+        setHomeName={setHomeName}
+        awayName={awayName}
+        setAwayName={setAwayName}
         homeScore={homeScore}
         setHomeScore={setHomeScore}
         awayScore={awayScore}
