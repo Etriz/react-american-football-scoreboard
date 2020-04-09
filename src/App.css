@@ -109,13 +109,36 @@
   width: 50%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+}
+.teamNames {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.homeButtons,
+.awayButtons {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.utilityButtons {
+  width: auto;
+  text-align: center;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
 }
 
 .homeButtons__touchdown,
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,
 .awayButtons__fieldGoal {
+  margin: 1rem;
+  border-radius: 4px;
+}
+.btn {
   margin: 1rem;
   border-radius: 4px;
 }
