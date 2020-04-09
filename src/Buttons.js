@@ -3,6 +3,9 @@ import React from "react";
 export default function Buttons(props) {
   return (
     <section className="buttons">
+      <input type="text" defaultValue="Lions" />
+      <input type="text" defaultValue="Tigers" />
+
       <div className="homeButtons">
         {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
         <button
